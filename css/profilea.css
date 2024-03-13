@@ -1,0 +1,38 @@
+.Section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Crimson Pro', serif;
+    padding: 10px;
+}
+.img{
+    transition: all 1s;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0px;
+    font-size: 1cm;
+}
+.sectionTag text-big{
+    font-size: 1cm;
+}
+.thumbnail img{
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-top: 9px;
+    padding: 0%;    
+}
+.icon{
+    border-radius: 50px;
+    color: rgb(53, 250, 3);
+    padding: 20px;
+    font-size: 40px;
+    position: relative;
+}

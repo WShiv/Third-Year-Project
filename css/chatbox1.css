@@ -1,0 +1,37 @@
+.chat-icon{
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat-box{
+    position: fixed;
+    right: 20px;
+    bottom: 100;
+    width: 400px;
+    height: 80vh;
+    background: #dedede;
+    z-index: 1000%;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+
+}
+
+.chat-box.active{
+    transform: scaleY(1);
+
+}
+
+.hidden{
+    display: none !important;
+}
+
+.conv-form-wrapper textarea{
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+}

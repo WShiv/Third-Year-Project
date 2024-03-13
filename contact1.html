@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US | </title>
+    <link rel="stylesheet" href="./css/contact1.css">
+</head>
+
+<body>
+
+   
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="container">
+        
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+                <input type="text" required id="name" class="text" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="email" required id="emailid" class="text" placeholder="Your Email....." />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" required cols="30" rows="10" class="text" placeholder="Message/Query......"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit" class="text">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>

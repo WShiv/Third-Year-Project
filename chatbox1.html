@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>chatbox</title>
+    <link rel="stylesheet" href="./css/chatbox1.css">
+    <link rel="stylesheet" href="./css/jquery.convform.css">
+
+    <script type="text/javascript" src="./js/Jquery3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/jquery.convform.js"></script>
+</head>
+<body>
+    <div class="chat-icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div class="chat-box">
+        <div id="chat" class="conv-form-wrapper">
+            <form action="" method="get" class="hidden">
+                <select name="programmer" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <div data-conv-fork="programmer">
+                    <div data-conv-case="yes">
+                        <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                    </div>
+                    <div data-conv-case="no">
+                        <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                            <option value="yes">Yes</option>
+                            <option value="no">No..</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
